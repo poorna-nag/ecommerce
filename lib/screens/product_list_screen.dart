@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../providers/product_provider.dart';
-import '../providers/cart_provider.dart';
-import '../widgets/product_card.dart';
-import 'product_detail_screen.dart';
-import 'cart_screen.dart';
-import '../core/constants/app_colors.dart';
+import 'package:ecommerce/providers/product_provider.dart';
+import 'package:ecommerce/providers/cart_provider.dart';
+import 'package:ecommerce/widgets/product_card.dart';
+import 'package:ecommerce/screens/product_detail_screen.dart';
+import 'package:ecommerce/screens/cart_screen.dart';
+import 'package:ecommerce/core/constants/app_colors.dart';
 
 class ProductListScreen extends StatefulWidget {
   const ProductListScreen({super.key});
@@ -55,7 +55,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                       child: Container(
                         padding: const EdgeInsets.all(2),
                         decoration: BoxDecoration(
-                          color: AppColors.primary.withValues(alpha: 0.2),
+                          color: AppColors.primary.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         constraints: const BoxConstraints(

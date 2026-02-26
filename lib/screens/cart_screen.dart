@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../providers/cart_provider.dart';
-import '../core/constants/app_colors.dart';
+import 'package:ecommerce/providers/cart_provider.dart';
+import 'package:ecommerce/core/constants/app_colors.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
@@ -164,7 +164,7 @@ class CartScreen extends StatelessWidget {
                     color: Colors.white,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
+                        color: Colors.black.withOpacity(0.05),
                         blurRadius: 10,
                         offset: const Offset(0, -5),
                       ),

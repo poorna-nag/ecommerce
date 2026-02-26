@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:intl/intl.dart';
-import '../models/product.dart';
-import '../providers/cart_provider.dart';
-import '../core/constants/app_colors.dart';
+import 'package:ecommerce/models/product.dart';
+import 'package:ecommerce/providers/cart_provider.dart';
+import 'package:ecommerce/core/constants/app_colors.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final Product product;
@@ -63,7 +63,7 @@ class ProductDetailScreen extends StatelessWidget {
                           vertical: 4,
                         ),
                         decoration: BoxDecoration(
-                          color: Colors.amber.withValues(alpha: 0.2),
+                          color: Colors.amber.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -130,7 +130,7 @@ class ProductDetailScreen extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.05),
+              color: Colors.black.withOpacity(0.05),
               blurRadius: 10,
               offset: const Offset(0, -5),
             ),
@@ -147,7 +147,7 @@ class ProductDetailScreen extends StatelessWidget {
             );
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+            backgroundColor: AppColors.primary.withOpacity(0.1),
             foregroundColor: AppColors.primary,
             elevation: 0,
             padding: const EdgeInsets.symmetric(vertical: 16),

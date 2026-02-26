@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/product.dart';
-import '../services/api_service.dart';
+import 'package:ecommerce/models/product.dart';
+import 'package:ecommerce/services/api_service.dart';
 
 class ProductProvider with ChangeNotifier {
   final ApiService _apiService = ApiService();
